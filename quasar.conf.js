@@ -109,7 +109,7 @@ module.exports = function ( ctx ) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: `Quasar App`,
+        name: `wheater gradiweb`,
         short_name: `Quasar App`,
         description: `technical test frontend gradiweb`,
         display: 'standalone',

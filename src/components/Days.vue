@@ -13,8 +13,8 @@
             <div>{{wheater['date']}}</div>
             <div>{{wheater['wheater'].main}}</div>
           </div>
-          <div class="temperature">
-            <div class="">{{wheater['tem_max']}} / {{wheater['tem_min']}}</div>
+          <div class="temperature" :class="wheater['tem_min'] > 10 ? 'green' : ''">
+            <div class="">{{wheater['tem_max']}}°/{{wheater['tem_min']}}°</div>
           </div>
         </div>
       </div>
@@ -57,4 +57,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.green {
+  background: #DCE8F4;
+  color: black;
+}
+</style>

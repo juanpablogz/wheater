@@ -9,7 +9,7 @@
     </div>
 
     <div class="display: flex">
-      <Days class="margin" :forecast="data" width="250" height="96" />
+      <Days class="margin" :forecast="days" width="250" height="96" />
       <City class="margin" />
       <Reviews class="margin" />
       <Location class="margin" width="250" height="96" />
@@ -27,7 +27,8 @@ export default {
   data() {
     return {
       forecast: [],
-      data: []
+      data: [],
+      days: []
     };
   },
   components: {
@@ -82,6 +83,9 @@ export default {
         };
         this.data.push(arr);
         // console.log(this.data);
+      }
+      for (let i = 0; i < 3; i++) {
+       this.days.push(this.data[i])
       }
       function getMax(arr, attr) {
         return Math.max.apply(

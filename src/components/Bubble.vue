@@ -5,7 +5,7 @@
         <img :src="`http://openweathermap.org/img/w/${forecast[0]['wheater'].icon}.png`" alt="">
       </div>
       <div class="bubble-2">
-        {{forecast[0].tem_max}}
+        {{forecast[0].tem_max}}°
       </div>
   </div>
 </div>
