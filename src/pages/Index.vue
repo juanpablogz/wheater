@@ -40,15 +40,14 @@ export default {
   created() {
     this.getData();
     this.filterDays();
-    var Xmas95 = new Date("December 25, 1995 23:15:30");
-    var weekday = Xmas95.getDay();
+     console.log(process.env.API.replace(/['"]+/g, ''))
   },
   methods: {
     getData() {
       var data = this;
       var xhr = new XMLHttpRequest();
       var url =
-        `http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${process.env.API}`;
+        `http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${process.env.API.replace(/['"]+/g, '')}`;
       xhr.open("GET", url, false);
       xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE) {
@@ -59,8 +58,6 @@ export default {
           }
         }
       };
-      console.log(process.env.API)
-       console.log(process.env.open)
       xhr.send();
       this.forecast = JSON.parse(data);
     },

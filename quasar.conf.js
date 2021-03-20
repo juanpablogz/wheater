@@ -5,6 +5,7 @@
 
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
+const envparser = require('./config/envparser')
 
 module.exports = function ( ctx ) {
   return {
@@ -18,7 +19,6 @@ module.exports = function ( ctx ) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
-      
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -43,9 +43,9 @@ module.exports = function ( ctx ) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
-
+      env: envparser(), // Injecting env varibles in process.env
       // transpile: false,
-      distDir: ctx.mode.pwa ? 'public' : null,
+      // distDir: ctx.mode.pwa ? 'public' : null,
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
       // Applies only if "transpile" is set to true.
@@ -62,6 +62,7 @@ module.exports = function ( ctx ) {
 
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
+
       },
     },
 

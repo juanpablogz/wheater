@@ -11,9 +11,12 @@
     "deploy": "vercel"
   },
   "dependencies": {
+    "-": "0.0.1",
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
-    "quasar": "^1.0.0"
+    "dotenv": "^8.2.0",
+    "quasar": "^1.0.0",
+    "save-dev": "0.0.1-security"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0"
