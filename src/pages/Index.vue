@@ -10,7 +10,7 @@
 
     <div class="display: flex">
       <Days class="margin" :forecast="days" width="250" height="96" />
-      <City class="margin" />
+      <Visit class="margin" />
       <Reviews class="margin" />
       <Location class="margin" width="250" height="96" />
     </div>
@@ -20,7 +20,7 @@
 <script>
 import Days from "./../components/Days";
 import Bubble from "./../components/Bubble";
-import City from "./../components/City";
+import Visit from "./../components/Visit";
 import Reviews from "./../components/Reviews";
 import Location from "./../components/Location";
 export default {
@@ -34,7 +34,7 @@ export default {
   components: {
     Days,
     Bubble,
-    City,
+    Visit,
     Reviews,
     Location
   },
