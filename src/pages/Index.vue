@@ -59,6 +59,8 @@ export default {
           }
         }
       };
+      console.log(process.env.API)
+       console.log(process.env.open)
       xhr.send();
       this.forecast = JSON.parse(data);
     },
