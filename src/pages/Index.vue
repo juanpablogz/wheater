@@ -47,7 +47,7 @@ export default {
       var data = this;
       var xhr = new XMLHttpRequest();
       var url =
-        `http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${process.env.API.replace(/['"]+/g, '')}`;
+        `https://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${process.env.API.replace(/['"]+/g, '')}`;
       xhr.open("GET", url, false);
       xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE) {
