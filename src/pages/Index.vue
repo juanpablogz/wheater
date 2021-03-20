@@ -47,9 +47,6 @@ export default {
     getData() {
       var data = this;
       var xhr = new XMLHttpRequest();
- const WHEATER = process.env.WHEATER;
-console.log(WHEATER)
-      console.log(WHEATER)
       var url =
         `http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${WHEATER}`;
       xhr.open("GET", url, false);
