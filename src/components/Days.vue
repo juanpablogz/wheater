@@ -14,7 +14,7 @@
             <div>{{wheater['wheater'].main}}</div>
           </div>
           <div class="temperature">
-            {{wheater['tem_max']}} / {{wheater['tem_min']}}
+            <div class="">{{wheater['tem_max']}} / {{wheater['tem_min']}}</div>
           </div>
         </div>
       </div>
