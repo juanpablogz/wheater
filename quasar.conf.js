@@ -23,14 +23,14 @@ module.exports = function ( ctx ) {
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
-      'app.sass'
+      'app.scss'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
       // 'mdi-v5',
-      // 'fontawesome-v5',
+      'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
@@ -45,7 +45,7 @@ module.exports = function ( ctx ) {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // transpile: false,
-      distDir: ctx.mode.pwa ? 'public' : null,
+      // distDir: ctx.mode.pwa ? 'public' : null,
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
       // Applies only if "transpile" is set to true.

@@ -1,0 +1,92 @@
+// app global css in Sass form
+
+  .elevate {
+    background: white;
+    height: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    transition: all .5s;
+  }
+  // &:hover {
+  //   box-shadow: 0 8px 8px rgba(0,0,0,.25);
+  //   margin: 5px;
+  // }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  .icon {
+      color: $primary;
+      padding-left: 22px;
+
+  }
+  .temperature {
+    background: $primary;
+    color: white;
+    height: 100%;
+    width: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+  }
+  .days {
+      margin-right: 30px;
+  }
+
+  .bubble {
+      background: $primary;
+      width: 80px;
+      height: 80px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px 5px 10px 5px;
+      i {
+        padding-left: 10px;
+      }
+  }
+
+  .bubble-2 {
+    background: $primary;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 5px 10px 5px;
+    i {
+      padding-left: 10px;
+    }
+}
+  .city {
+    margin: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+  }
+
+  .place {
+      width: 260px;
+      border-radius: 45px;
+  }
+
+  .box img{
+    height: 100%;
+    width:100%;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .elevate-custom {
+    height: 200px;
+  }
