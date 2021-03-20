@@ -10,7 +10,7 @@
 
     <div class="display: flex">
       <Days :forecast="data" width="250" height="96" />
-      <City />
+      <!-- <City /> -->
       <Reviews />
       <Location width="250" height="96" />
     </div>
@@ -47,8 +47,11 @@ export default {
     getData() {
       var data = this;
       var xhr = new XMLHttpRequest();
+ const WHEATER = process.env.WHEATER;
+console.log(WHEATER)
+      console.log(WHEATER)
       var url =
-        "http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=080ec8560a4965f95a43f80be54bae5d";
+        `http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&mode=json&appid=${WHEATER}`;
       xhr.open("GET", url, false);
       xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE) {
