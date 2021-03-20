@@ -2,7 +2,7 @@
   <div>
       <p class="title"><strong>Place to</strong> visit</p>
       <div class="elevate place box">
-          <img classs="box" src="https://cdn.getyourguide.com/img/location/5cced3e295e02.jpeg/88.jpg" alt="">
+          <img classs="box" src="https://res.cloudinary.com/dutj1bbos/image/upload/v1616111698/3042_mvl40f.jpg" alt="">
       </div>
 
   </div>
