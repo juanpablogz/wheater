@@ -9,10 +9,10 @@
     </div>
 
     <div class="display: flex">
-      <Days :forecast="data" width="250" height="96" />
-      <City />
-      <Reviews />
-      <Location width="250" height="96" />
+      <Days class="margin" :forecast="data" width="250" height="96" />
+      <!-- <City class="margin" /> -->
+      <Reviews class="margin" />
+      <Location class="margin" width="250" height="96" />
     </div>
   </q-page>
 </template>
@@ -20,7 +20,7 @@
 <script>
 import Days from "./../components/Days";
 import Bubble from "./../components/Bubble";
-import City from "./../components/City";
+// import City from "./../components/City";
 import Reviews from "./../components/Reviews";
 import Location from "./../components/Location";
 export default {
@@ -33,14 +33,14 @@ export default {
   components: {
     Days,
     Bubble,
-    City,
+    // City,
     Reviews,
     Location
   },
   created() {
     this.getData();
     this.filterDays();
-     console.log(process.env.API.replace(/['"]+/g, ''))
+    //  console.log(process.env.API.replace(/['"]+/g, ''))
   },
   methods: {
     getData() {
@@ -67,7 +67,7 @@ export default {
         days[date] = [...(days[date] ? days[date] : []), row];
         return days;
       }, {});
-      console.log(groupedData);
+      // console.log(groupedData);
       var i = 0;
       for (let date of Object.keys(groupedData)) {
         let wheater = groupedData[Object.keys(groupedData)[i]][i]["weather"][0];
@@ -81,7 +81,7 @@ export default {
           date
         };
         this.data.push(arr);
-        console.log(this.data);
+        // console.log(this.data);
       }
       function getMax(arr, attr) {
         return Math.max.apply(
@@ -100,3 +100,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.margin {
+  margin: 20px;
+}
+</style>

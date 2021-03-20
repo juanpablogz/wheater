@@ -1,6 +1,8 @@
 <template>
   <div>
     <p>Top reviews</p>
+    <div class="elevate reviews"></div>
+    <div class="elevate fat"></div>
   </div>
 </template>
 
@@ -38,4 +40,14 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.reviews {
+  height: 110px;
+  width: 300px;
+  border-radius: 30px;
+}
+.fat {
+  height: 200px;
+  border-radius: 30px;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <q-page>
   <div>
-    <p>3 Days Forecast</p>
+    <p class="title"><strong>3 Days</strong> Forecast</p>
     <div v-for="wheater in forecast" :key="wheater.id">
       <div class="elevate" :style="size">
         <div class="description">
