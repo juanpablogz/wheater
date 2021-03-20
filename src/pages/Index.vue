@@ -20,7 +20,7 @@
 <script>
 import Days from "./../components/Days";
 import Bubble from "./../components/Bubble";
-import City from "./../components/City";
+// import City from "./../components/City";
 import Reviews from "./../components/Reviews";
 import Location from "./../components/Location";
 export default {
@@ -33,15 +33,15 @@ export default {
   components: {
     Days,
     Bubble,
-    City,
+    // City,
     Reviews,
     Location
   },
   created() {
     this.getData();
     this.filterDays();
-var Xmas95 = new Date('December 25, 1995 23:15:30');
-var weekday = Xmas95.getDay();
+    var Xmas95 = new Date("December 25, 1995 23:15:30");
+    var weekday = Xmas95.getDay();
   },
   methods: {
     getData() {
@@ -69,11 +69,11 @@ var weekday = Xmas95.getDay();
         return days;
       }, {});
       console.log(groupedData);
-      var i = 0
+      var i = 0;
       for (let date of Object.keys(groupedData)) {
         let wheater = groupedData[Object.keys(groupedData)[i]][i]["weather"][0];
-        let date = Object.keys(groupedData)[i]
-        i++
+        let date = Object.keys(groupedData)[i];
+        i++;
         let arr = {
           tem_max: getMax(groupedData[date], "temp_max"),
           tem_min: getMin(groupedData[date], "temp_min"),
@@ -82,7 +82,7 @@ var weekday = Xmas95.getDay();
           date
         };
         this.data.push(arr);
-        console.log(this.data)
+        console.log(this.data);
       }
       function getMax(arr, attr) {
         return Math.max.apply(
