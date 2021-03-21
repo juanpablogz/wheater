@@ -9,7 +9,7 @@
     </div>
 
     <div class="display: flex">
-      <Days class="margin" :forecast="days" width="250" height="96" />
+      <Days class="margin" :forecast="data" width="250" height="96" />
       <Visit class="margin" />
       <Reviews class="margin" />
       <Location class="margin" width="250" height="96" />
@@ -68,7 +68,7 @@ export default {
         days[date] = [...(days[date] ? days[date] : []), row];
         return days;
       }, {});
-      // console.log(groupedData);
+      //  console.log(groupedData);
       var i = 0;
       for (let date of Object.keys(groupedData)) {
         let wheater = groupedData[Object.keys(groupedData)[i]][i]["weather"][0];

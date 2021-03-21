@@ -102,7 +102,7 @@ export default {
       var y = 5;
       var data = []
       for (let date of Object.keys(groupedData)) {
-        let wheater = groupedData[Object.keys(groupedData)[i]][i]["weather"][0];
+        // let wheater = groupedData[Object.keys(groupedData)[i]][i]["weather"][0];
         let date = Object.keys(groupedData)[i];
         let city = this.forecast.city
         let wind = this.forecast.list[0].wind
@@ -111,7 +111,7 @@ export default {
           tem_max: getMax(groupedData[date], "temp_max"),
           tem_min: getMin(groupedData[date], "temp_min"),
           humidity: getMax(groupedData[date], "humidity"),
-          wheater,
+          // wheater,
           date,
           city,
           wind
