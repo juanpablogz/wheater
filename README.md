@@ -17,6 +17,8 @@ quasar dev
 ```bash
 quasar build
 ```
+### instructions
+in development mode please comment distDir: ctx.mode.pwa? 'public': null, in production uncomment it
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
