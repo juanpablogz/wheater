@@ -125,3 +125,25 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.container{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.text{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-weight: 700;
+}
+.container-all {
+  display:flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .container-all {
+    justify-content: center;
+  }
+}

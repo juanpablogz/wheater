@@ -11,7 +11,7 @@
                   </div>
                 </div>
               <div class="name-city">
-                <div>{{wheater['tem_max']}}</div>
+                <div>{{wheater['tem_max']}}°</div>
                 <div>{{wheater['city'].name}}</div>
               </div>
               </div>

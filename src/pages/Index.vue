@@ -8,7 +8,7 @@
       />
     </div>
 
-    <div class="display: flex">
+    <div class="container-all">
       <Days class="margin" :forecast="data" width="250" height="96" />
       <Visit class="margin" />
       <Reviews class="margin" />
@@ -83,9 +83,6 @@ export default {
         };
         this.data.push(arr);
         // console.log(this.data);
-      }
-      for (let i = 0; i < 3; i++) {
-       this.days.push(this.data[i])
       }
       function getMax(arr, attr) {
         return Math.max.apply(
