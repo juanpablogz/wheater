@@ -141,9 +141,13 @@
 .container-all {
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .container-all {
     justify-content: center;
+  }
+  .margin {
+    margin: 0px;
   }
 }
